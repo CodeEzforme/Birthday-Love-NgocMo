@@ -204,7 +204,7 @@ function createAmbient() {
 
 function createDateReel() {
   const reel = document.getElementById('number-reel');
-  const numbers = [21, 19, 16, 14, 12, 10, 8, 6, 5, 4];
+  const numbers = [4, 6, 8, 10, 12, 14, 16, 17, 19, 18];
   reel.innerHTML = numbers.map((number) => `<span>${number}</span>`).join('');
 }
 
@@ -349,7 +349,7 @@ const confessions = [
 function createMatrixRain() {
   const rain = document.getElementById('matrix-rain');
   rain.innerHTML = '';
-  const glyphs = 'ANHYÊUEM♡0409';
+  const glyphs = 'ANHYÊUEM♡1809';
   for (let i = 0; i < 34; i += 1) {
     const column = document.createElement('span');
     column.textContent = Array.from({ length: 18 }, () => glyphs[Math.floor(Math.random() * glyphs.length)]).join('\n');
